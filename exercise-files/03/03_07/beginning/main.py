@@ -2,7 +2,7 @@ import streamlit as st
 from handlers import generate_chat_completion
 
 # Streamlit App
-st.title("🤖 Chatbot App")  # Add a title
+st.title("😊 Funny Chatbot App")  # Add a title
 
 # User input
 with st.form("user_form", clear_on_submit=True):
