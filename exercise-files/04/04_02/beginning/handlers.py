@@ -13,7 +13,12 @@ messages = [{"role": "system", "content": MESSAGE_SYSTEM}]
 
 
 def moderate(user_input):
-    pass
+    response = client.moderations.create(user_input)
+    print(response)
+
+    output = response.results[0]
+    
+
 
 
 def generate_chat_completion(user_input, messages):
