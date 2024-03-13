@@ -5,7 +5,7 @@ desired_size = (600, 400)
 
 # Streamlit App
 st.title("🖼️ Image Generation Gallery ✨")  # Add a title
-margin = '<div style="margin: 20px 5px;"></div>'
+margin = '<div style="margin: 120px 85px;"></div>'
 
 # User input
 with st.form("user_form", clear_on_submit=True):
