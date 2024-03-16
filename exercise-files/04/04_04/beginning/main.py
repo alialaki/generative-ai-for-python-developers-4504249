@@ -14,7 +14,11 @@ with st.form("user_form", clear_on_submit=True):
 
 # Press Enter to generate response from chatbot
 if submit_button:
-    pass
+    with st.spinner("Generating image..."):
+        image = generate_image(user_input)
+        save_image = downloadFile(user_input, image)
+        st.image(image, use_column_width=True)
+        st.success("Image succesfully generated and saved to media folder!")
 
 
 def display_gallery():
